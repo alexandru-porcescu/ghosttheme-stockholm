@@ -1,3 +1,5 @@
+import ScrollBooster from 'scrollbooster';
+
 export function scrollable_tables() {
   let tables = document.getElementsByClassName('tableContainer');
   for (let table of tables) {

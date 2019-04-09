@@ -1,12 +1,15 @@
+// May not need this
+require('es6-promise').polyfill();
+const fetch = require('isomorphic-fetch');
 
 
-function current_page() {
+export function current_page() {
   const sPath = String(document.location.pathname);
   const slug = sPath.split('/')[1];
   return slug;
 }
 
-function create_nextprev_widget(posts) {
+export function create_nextprev_widget(posts) {
   var numposts = posts.length;
   var post_slug = postFunctions.current_page();
   var index = posts.findIndex(function(item, i) {
@@ -29,14 +32,14 @@ function create_nextprev_widget(posts) {
   }
 }
 
-function populate_series_list(post) {
+export function populate_series_list(post) {
   $('#seriesposts h5').html(post['seriesname'].replace('#', ''));
   $('#seriesposts ol').append('<li class="' + post['slug'] + '"><a href="' + post['url'] + '">' + post['title'] + '</a></li>');
   $('#seriesposts').css('display', 'block');
   $('.nextprev-container').css('display', 'block');
 }
 
-function posts_in_series(series, series_name) {
+export function posts_in_series(series, series_name) {
   const series_endpoint = 'https://hackersandslackers.com/ghost/api/v2/content/posts/?key=bc6a59fe37ee67d9fbb93ea03b&filter=tag:' + series + '&order_by=created_at.asc'
   const headers = {
     "Content-Type": "application/json"
@@ -76,7 +79,7 @@ function posts_in_series(series, series_name) {
   });
 }
 
-function tag_loop(tags) {
+export function tag_loop(tags) {
   var i;
   for (i = 0; i < tags.length; i++) {
     const tag = tags[i];

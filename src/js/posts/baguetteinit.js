@@ -1,3 +1,5 @@
+import baguetteBox from 'baguettebox.js';
+
 export function enable_baguettebox() {
   $('main img').each(function(obj, i) {
     const imagesrc = $(this).attr('src');
