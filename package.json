@@ -51,6 +51,8 @@
     "gatsby-source-filesystem": "2.0.24",
     "gatsby-source-ghost": "3.3.0",
     "gatsby-transformer-sharp": "2.1.16",
+    "graphql": "^14.2.1",
+    "graphql-tools": "^4.0.4",
     "less": "^3.9.0",
     "lodash": "4.17.11",
     "react": "16.8.4",
