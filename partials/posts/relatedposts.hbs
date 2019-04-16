@@ -1,9 +1,0 @@
-<!-- Start Related Posts -->
-<div class="prev-next-wrap">
-	{{#get "posts" limit="3" include="tags,authors" filter="slug:-{{slug}}+tag:{{primary_tag.slug}}"}}
-		{{#foreach posts}}
-				{{> article-preview}}
-			{{/foreach}}
-		{{/get}}
-</div>
-<!-- End Related Posts -->

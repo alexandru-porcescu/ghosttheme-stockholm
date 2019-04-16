@@ -1,128 +1,85 @@
-# Stockholm Ghost Theme
+# Gastby Starter Ghost
 
-![Ghost](https://img.shields.io/badge/Ghost-^v2.0.0-lightgrey.svg?longCache=true&style=flat-square&logo=ghost&logoColor=white&colorB=656c82&colorA=36363e)
-![Node](https://img.shields.io/badge/NodeJS-v10.15.0-green.svg?longCache=true&style=flat-square&logo=node.js&logoColor=white&colorB=339933&colorA=36363e)
-![Webpack](https://img.shields.io/badge/Webpack-v4.29.0-blue.svg?longCache=true&style=flat-square&logo=webpack&logoColor=white&colorB=23a8e2&colorA=36363e)
-![GraphQL](https://img.shields.io/badge/GraphQL-v14.1.1-pink.svg?longCache=true&style=flat-square&logo=graphql&logoColor=white&colorB=E10098&colorA=36363e)
-![Baguettebox](https://img.shields.io/badge/baguettebox.js-v1.11.0-blue.svg?longCache=true&style=flat-square&colorA=36363e&logo=JavaScript&logoColor=white)
-![Ghost-Pagination](https://img.shields.io/badge/ghost--pagination-v0.1.3-green.svg?longCache=true&style=flat-square&logoColor=white&colorA=36363e&colorB=7aa206&logo=ghost)
-![Vanilla Lazyload](https://img.shields.io/badge/Vanilla--Lazyload-v11.0.6-red.svg?longCache=true&style=flat-square&logo=JavaScript&logoColor=white&colorB=7aa206&colorA=36363e)
-![Retina.js](https://img.shields.io/badge/Retina.js-v1.3.0-red.svg?longCache=true&style=flat-square&logo=JavaScript&logoColor=white&colorB=7aa206&colorA=36363e)
-![Highlight.js](https://img.shields.io/badge/Highlight.js-v9.15.6-red.svg?longCache=true&style=flat-square&logo=JavaScript&logoColor=white&colorB=b62e2e&colorA=36363e)
-![Babel](https://img.shields.io/badge/@babel/core-v7.3.4-yellow.svg?longCache=true&style=flat-square&logo=JavaScript&logoColor=white&colorB=daa000&colorA=36363e)
-![Sendgrid](https://img.shields.io/badge/Sendgrid-v6.3.0-blue.svg?longCache=true&logo=delicious&longCache=true&style=flat-square&logoColor=white&colorB=23a8e2&colorA=36363e)
-![Slick Carousel](https://img.shields.io/badge/Slick--Carousel-v1.8.1-blue.svg?longCache=true&logo=JavaScript&longCache=true&style=flat-square&logoColor=white&colorB=3498db&colorA=36363e)
-![ScrollBooster](https://img.shields.io/badge/ScrollBoster-v1.1.0-blue.svg?longCache=true&logo=scrutinizer-ci&longCache=true&style=flat-square&logoColor=white&colorB=ffa083&colorA=36363e)
-![GitHub Last Commit](https://img.shields.io/github/last-commit/google/skia.svg?style=flat-square&colorA=36363e&logo=GitHub)
-[![GitHub Issues](https://img.shields.io/github/issues/toddbirchard/ghosttheme-stockholm.svg?style=flat-square&colorB=daa000&colorA=36363e&logo=GitHub)](https://github.com/toddbirchard/ghosttheme-stockholm/issues)
-[![GitHub Stars](https://img.shields.io/github/stars/toddbirchard/ghosttheme-stockholm.svg?style=flat-square&colorB=daa000&colorA=36363e&logo=GitHub)](https://github.com/toddbirchard/ghosttheme-stockholm/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/toddbirchard/ghosttheme-stockholm.svg?style=flat-square&colorB=FCC624&colorA=36363e&logo=GitHub)](https://github.com/toddbirchard/ghosttheme-stockholm/network)
+A starter template to build lightning fast websites with [Ghost](https://ghost.org) & [Gatsby](https://gatsbyjs.org)
 
-Stockholm is a (currently) free theme for the [Ghost](https://github.com/TryGhost) blogging platform. This theme has yet to be whitelabeled, but a live implementation of this theme can be previewed here: [https://hackersandslackers.com/](https://hackersandslackers.com/)
+**Demo:** https://gatsby.ghost.org
 
-![Stockholm Theme](assets/images/stockholm4.jpg)
+&nbsp;
 
-# About
+![gatsby-starter-ghost](https://user-images.githubusercontent.com/120485/50913567-8ab8e380-142c-11e9-9e78-de02ded12fc6.jpg)
 
-_Stockholm_ is arguably the most feature-rich Ghost theme currently on the market. With some configuration, users can extend the functionality of their theme by accessing data which would be otherwise inaccessible via the standard Ghost API. This enables a plethora of features and widgets previously unavailable to Ghost.  Users can enable customizations such as contextual widgets, fully integrated user sign ups, and unique page templates.
+&nbsp;
 
-This project is in *active development*. All are welcome to use this theme, but oddities _will_ exist until more user-friendly configuration is completed. For example, certain services are specifically whitelisted to the working domain and will break when cloned. This is being fixed.
 
-## Features
+# Installing
 
-Beyond predictable built-in blog features, *Stockholm* leverages services atypical blog themes to provide delightfully refreshing yet technically complex functionality.
-
-### Major Features
-
-* Content
-  * Global searchbar
-  * `<a>` tags generate embedded previews
-  * Hand-designed code snippets
-  * Interactive data tables
-* API
-  * Featured posts
-  * Multi-part content publications
-  * Additional social media options for authors
-  * Enumerated pagination
-* Projects
-  * Full JIRA integration with functioning Kanban board
-* Accounts
-  * User Authentication & Sign-up for Readers
-* Authors
-  * Individual author pages (personalized social widgets)
-  * ‘Contributors’ page detailing bios for blog authors
-* Misc
-  * Automatic image compression
-  * Responsive layout
-
-### Widgets
-
-* Content
-  * Recent Posts
-  * Related Posts
-  * Publications
-  * Table of contents (Post X of Y)
-* Authors
-  * Blog Contributors
-  * Author detail cards
-  * Github activity per author
-  * Github repositories per author
-  * Author website embed
-  * Upcoming Meetup Events
-  * Recent Medium Posts
-* Social
-  * Connected Social Profiles
-  * Twitter feed per author
-  * Facebook page preview
-* Users
-  * Hybrid account creation + subscribe
-
-### Page Templates
-
-* `custom-author-archive.hbs`: Alternative "about" page which displays author bios.
-* `custom-projects.hbs`: Live JIRA Kanban board integration, lists chosen Github repositories.
-* `custom-tag-archive.hbs`: Template for ongoing editorial series’.
-* `custom-apply`: Application process for aspiring authors.
-* `custom-resources`: Recommended products, code libraries, etc.
-* `series`: Page containing all posts of a series, compiled via dynamic routing.
-* `error`: Custom 404 page.
-
-## Planned Features
-
-### Features In Development
-
-* Code Cheatsheet section
-* Homegrown commenting system (zero dependencies on Disquis)
-* Automated Sendgrid newsletters
-* Additional publication widgets
-
-### Coming Later Perhaps
-
-* Recommended posts
-* Recommended services & tools
-* Trending posts
-* Guest posts
-* Executable code interpreters
-* Author/tag subscriptions
-* Trending Topics
-
-## Installation
-
-For information on installing the Ghost platform, please reference the [Ghost CLI](https://docs.ghost.org/docs/cli-install).
-
-```
-$ git clone https://github.com/toddbirchard/ghosttheme-stockholm.git
-$ cd ghosttheme-stockholm
-$ npm install
-$ npm run build
+```bash
+# With Gatsby CLI
+gatsby new gatsby-starter-ghost https://github.com/TryGhost/gatsby-starter-ghost.git
 ```
 
-As always, remember to restart your Ghost instance when adding new themes.
+```bash
+# From Source
+git clone https://github.com/TryGhost/gatsby-starter-ghost.git
+cd gatsby-starter-ghost
+```
 
-### Maintenance
+Then install dependencies
 
-* Documentation
-* User-friendly configuration
-* Image compression optimization
-* Retina image support
-* Site speed optimizations
+```bash
+yarn
+```
+
+&nbsp;
+
+# Running
+
+Start the development server. You now have a Gatsby site pulling content from headless Ghost.
+
+```bash
+gatsby develop
+```
+
+By default, the starter will populate content from a default Ghost install located at https://gatsby.ghost.io.
+
+To use your own install, edit the `.ghost.json` config file with your credentials. You can find your `contentApiKey` in the "Integrations" screen in Ghost Admin.
+
+&nbsp;
+
+# Deploying with Netlify
+
+The starter contains three config files specifically for deploying with Netlify. A `netlify.toml` file for build settings, a `/static/_headers` file with default security headers set for all routes, and `/static/_redirects` to set Netlify custom domain redirects.
+
+To deploy to your Netlify account, hit the button below.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/)
+
+Content API Keys are generally not considered to be sensitive information, they exist so that they can be changed in the event of abuse; so most people commit it directly to their `.ghost.json` config file. If you prefer to keep this information out of your repository you can remove this config and set [Netlify ENV variables](https://www.netlify.com/docs/continuous-deployment/#build-environment-variables) for production builds instead.
+
+Once deployed, you can set up a [Ghost + Netlify Integration](https://docs.ghost.org/integrations/netlify/) to use deploy hooks from Ghost to trigger Netlify rebuilds. That way, any time data changes in Ghost, your site will rebuild on Netlify.
+
+&nbsp;
+
+# Optimising
+
+You can disable the default Ghost Handlebars Theme front-end by enabling the `Make this site private` flag within your Ghost settings. This enables password protection in front of the Ghost install and sets `<meta name="robots" content="noindex" />` so your Gatsby front-end becomes the source of truth for SEO.
+
+&nbsp;
+
+# Extra options
+
+```bash
+# Run a production build, locally
+gatsby build
+
+# Serve a production build, locally
+gatsby serve
+```
+
+Gatsby `develop` uses the `development` config in `.ghost.json` - while Gatsby `build` uses the `production` config.
+
+&nbsp;
+
+# Copyright & License
+
+Copyright (c) 2013-2019 Ghost Foundation - Released under the [MIT license](LICENSE).
